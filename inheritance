@@ -1,0 +1,162 @@
+class A {
+	int a,b;
+	
+	public void show() {
+		System.out.println("Hello");
+	}
+}
+class B extends A{
+	int c,d;
+	
+	public void write(){
+		System.out.println("writing!!");
+	}
+}
+
+public class problem{
+	public static void main(String[] args) {
+		//single inheritance
+		B b = new B();
+		b.a =5;
+	}
+}
+
+
+//multi level inheritance
+class A {
+	int a,b;
+	
+	public void show() {
+		System.out.println("Hello");
+	}
+}
+class B extends A{
+	int c,d;
+	
+	public void write(){
+		System.out.println("writing!!");
+	}
+}
+class C extends B{
+	int e,f;
+	
+	public void speak(){
+		System.out.println("speaking!!");
+	}
+}
+class D extends C{
+	int g,h;
+	
+	public void eat(){
+		System.out.println("eating!!");
+	}
+}
+public class problem{
+	public static void main(String[] args) {
+		//single inheritance
+		D d= new D();
+		d.a=8;
+	}
+}
+
+//hierarical inheritance
+class A {
+	int a,b;
+	
+	public void show() {
+		System.out.println("Hello");
+	}
+}
+class B extends A{
+	int c,d;
+	
+	public void write(){
+		System.out.println("writing!!");
+	}
+}
+
+class C extends A{
+	int e,f;
+	
+	public void speak(){
+		System.out.println("speaking!!");
+	}
+}
+
+public class problem{
+	public static void main(String[] args) {
+		//single inheritance
+		B b= new B();
+		C c= new C();
+		b.a=9;
+	}
+}
+
+//multiple inheritance is not possible in java
+class A {
+	int a,b;
+	
+	public void show() {
+		System.out.println("Hello");
+	}
+}
+class B {
+	int c,d;
+	
+	public void write(){
+		System.out.println("writing!!");
+	}
+}
+
+class C extends A,B{// it is not possible in java (multiple inheritance)
+	int e,f;
+	
+	public void speak(){
+		System.out.println("speaking!!");
+	}
+}
+
+public class problem{
+	public static void main(String[] args) {
+		//single inheritance
+		B b= new B();
+		C c= new C();
+		b.a=9;
+	}
+}
+
+
+
+//interface for multiple inheritance
+class A {
+	int a,b;
+	
+	public void show() {
+		System.out.println("Hello");
+	}
+}
+interface B{
+	public void speak();
+	}
+}
+interface C{
+	public void sleep();
+	
+}
+
+class D implements B,C{// it is  possible in java (interfaces )
+	int e,f;
+	
+	public void speak(){
+		System.out.println("speaking!!");
+	}
+}
+
+public class problem{
+	public static void main(String[] args) {
+		//single inheritance
+		B b= new B();
+		C c= new C();
+		b.a=9;
+	}
+}
