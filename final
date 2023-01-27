@@ -1,0 +1,25 @@
+//final keyword
+class A{
+	final int noofAlphabets = 26;//this way we can assign
+	final int noofDigits;
+	//Either assign the value at time of declaration or assign the value inside constructors
+	A(){
+		noofDigits =10;
+	}
+	final void fun() {
+		System.out.println("Hi, I'm a function in class A");
+	}
+}
+final class B extends A{//final classes can't be inherited
+	//void fun(){  //becoz final keyword makes the method final we can't use and we can't change
+	//System.out.println("I'm function in B overriding function in A");
+	//}
+}
+//class C extends B{
+//	
+//}
+public class problem{
+	public static void main(String[] args) {
+		
+	}
+}
