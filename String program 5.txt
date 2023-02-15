@@ -1,0 +1,23 @@
+
+
+/**
+ * A Java program to reverse a string.
+ * 
+ * We are using 'charAt()' method of the String class to get all char and
+ * arrange it in descending order to get a reverse string.
+ * 
+ */
+public class ReverseString {
+    public static void main(String[] args) {
+ 
+        String name = "GauravKukade";
+        String reversedString = "";
+ 
+        for (int i = name.length() - 1; i >= 0; i--) {
+            reversedString = reversedString + name.charAt(i);
+        }
+ 
+        System.out.print("The reversed string of the '" + name + "' is: ");
+        System.out.println(reversedString);
+    }
+}
